@@ -78,6 +78,12 @@ This is an estimate, not advice. In particular:
 |---|---|
 | `cpf-data.js` | The database: every CPF figure and rule. Update this when CPF announces new figures. |
 | `cpf-lookups.js` | Functions that read the database |
+
+**Shared with the BTO Planner:** its pages load `cpf-data.js` and `cpf-lookups.js`
+from this site, so a CPF figure updated here updates both apps. Don't rename or
+remove anything in those two files without checking the BTO Planner (its tests
+read them from a copy of this repo cloned next to it).
+
 | `config.js` | App settings: form defaults and modelling assumptions |
 | `engine.js` | The forecast calculations |
 | `app.js` | The page: form, results, chart, sharing and export |
