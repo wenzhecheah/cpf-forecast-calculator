@@ -83,6 +83,19 @@ This is an estimate, not advice. In particular:
 | `app.js` | The page: form, results, chart, sharing and export |
 | `index.html`, `style.css` | Page layout and styling |
 | `assets/` | The VWA logo for the browser tab and home-screen shortcuts (from vwagroup.sg) |
+| `tests/` | Checks of the calculations against CPF's published rates, rules and examples |
+
+## Tests
+
+Run them after changing `cpf-data.js` or the calculations (Node 18 or later):
+
+```
+node --test
+```
+
+They check contributions, extra interest, the BHS, RA formation at 55,
+MediSave overflow, top-up limits and CPF LIFE payouts against CPF's own
+figures. When CPF changes a figure on purpose, update the matching test.
 
 ## Updating it
 
