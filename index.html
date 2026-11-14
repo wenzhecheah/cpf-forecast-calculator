@@ -68,35 +68,6 @@
               </label>
             </fieldset>
           </div>
-          <div class="panel">
-            <fieldset>
-              <legend>Forecast</legend>
-              <label>Forecast to age <input type="number" id="targetAge" required></label>
-              <label class="check"><input type="checkbox" id="projectSums">
-                <span>Project future retirement sums and BHS
-                <span class="hint">CPF hasn't published them past <span data-cpf="latestSums"></span>. Ticked: they grow <span data-cpf="growthText"></span>, as estimates. Unticked: the latest published figures are reused, which makes the FRS and BHS look easier to reach than they will be.</span></span>
-              </label>
-              <div id="payoutGroup" class="group" hidden>
-                <label>Start CPF LIFE monthly payouts at age
-                  <select id="payoutAge"></select>
-                </label>
-                <label>CPF LIFE plan
-                  <select id="cpfLifePlan"></select>
-                </label>
-                <label>Sex
-                  <span class="hint">CPF publishes payout figures for men only. Women get less because they live longer on average, so for women the estimate is about <span data-cpf="femaleReduction"></span>% lower: an approximation, not a CPF figure.</span>
-                  <select id="sex">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                  </select>
-                </label>
-                <label>Starting monthly payout from CPF's Monthly Payout Estimator
-                  <span id="estimateHint" class="hint">Optional. If entered, replaces the app's estimate.</span>
-                  <input type="text" inputmode="decimal" class="money" id="cpfEstimate" placeholder="$0.00">
-                </label>
-              </div>
-            </fieldset>
-          </div>
         </div>
         <div class="form-col">
           <div class="panel">
@@ -191,6 +162,35 @@
               <label class="check"><input type="checkbox" id="withdrawAt55">
                 <span><span>Withdraw everything else allowed as cash at <span data-cpf="raAge"></span></span>
                 <span class="hint">At least <span data-cpf="minWithdrawal"></span>, or all OA savings left after setting aside the RA.</span></span></label>
+            </fieldset>
+          </div>
+          <div class="panel">
+            <fieldset>
+              <legend>Forecast</legend>
+              <label>Forecast to age <input type="number" id="targetAge" required></label>
+              <label class="check"><input type="checkbox" id="projectSums">
+                <span>Project future retirement sums and BHS
+                <span class="hint">CPF hasn't published them past <span data-cpf="latestSums"></span>. Ticked: they grow <span data-cpf="growthText"></span>, as estimates. Unticked: the latest published figures are reused, which makes the FRS and BHS look easier to reach than they will be.</span></span>
+              </label>
+              <div id="payoutGroup" class="group" hidden>
+                <label>Start CPF LIFE monthly payouts at age
+                  <select id="payoutAge"></select>
+                </label>
+                <label>CPF LIFE plan
+                  <select id="cpfLifePlan"></select>
+                </label>
+                <label>Sex
+                  <span class="hint">CPF publishes payout figures for men only. Women get less because they live longer on average, so for women the estimate is about <span data-cpf="femaleReduction"></span>% lower: an approximation, not a CPF figure.</span>
+                  <select id="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </label>
+                <label>Starting monthly payout from CPF's Monthly Payout Estimator
+                  <span id="estimateHint" class="hint">Optional. If entered, replaces the app's estimate.</span>
+                  <input type="text" inputmode="decimal" class="money" id="cpfEstimate" placeholder="$0.00">
+                </label>
+              </div>
             </fieldset>
           </div>
         </div>

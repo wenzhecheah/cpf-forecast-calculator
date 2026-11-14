@@ -29,9 +29,9 @@ and nothing you enter leaves the browser.
 ## Using it
 
 Fill in the form and press **Calculate**. On a wide screen the form shows in
-two columns: your details, work and forecast settings on the left, and the
-optional sections (housing, MediSave premiums, top-ups) and "At 55" choices on
-the right. On a phone it is one column.
+two columns: your details and work on the left, and the optional sections
+(housing, MediSave premiums, top-ups), the "At 55" choices and the forecast
+settings on the right. On a phone it is one column.
 
 Results show headline figures, a chart, and the year-by-year table, with notes
 on the years where something important happens (the RA is formed, payouts
