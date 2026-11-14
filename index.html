@@ -13,6 +13,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Jost:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
+  <!-- Faster opening: pages linked from here load in the background when a link is hovered,
+       so they open instantly (Chrome and Edge; other browsers ignore this). -->
+  <script type="speculationrules">{"prerender": [{"where": {"href_matches": "/*"}, "eagerness": "moderate"}]}</script>
+  <!-- Keep the page hidden until fade-in.js starts its entrance (at most 3 s), so it doesn't flash first. -->
+  <script>if (!matchMedia("(prefers-reduced-motion: reduce)").matches) { document.documentElement.classList.add("fade-pending"); setTimeout(() => document.documentElement.classList.remove("fade-pending"), 3000); }</script>
 </head>
 <body>
   <header class="masthead">
