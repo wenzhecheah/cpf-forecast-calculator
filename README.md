@@ -28,10 +28,11 @@ and nothing you enter leaves the browser.
 
 ## Using it
 
-Fill in the form and press **Calculate**. On a wide screen the form shows in
-two columns: your details, work and forecast settings on the left, and the
-optional sections (housing, MediSave premiums, top-ups) and "At 55" choices on
-the right. On a phone it is one column.
+Fill in the form and press **Calculate**. On a wide screen the form is one
+even block of three columns that all end on the same line: you and your CPF
+today, with the optional housing and MediSave premium sections; work and
+income, with top-ups and transfers; and the forecast and "At 55" choices. On a
+narrower screen it is two columns, and on a phone one.
 
 Results show headline figures, a chart, and the year-by-year table, with notes
 on the years where something important happens (the RA is formed, payouts

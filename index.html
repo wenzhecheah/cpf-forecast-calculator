@@ -38,63 +38,6 @@
             </fieldset>
           </div>
           <div class="panel">
-            <fieldset>
-              <legend>Work and income</legend>
-              <label>Contribution rates
-                <select id="memberType"></select>
-              </label>
-              <label><span id="salaryLabel">Monthly salary</span>
-                <span id="salaryHint" class="hint"></span>
-                <input type="text" inputmode="decimal" class="money" id="salary" placeholder="$0.00">
-              </label>
-              <div class="row2">
-                <label id="bonusField">Yearly bonus, in months of salary
-                  <span class="hint">Includes any 13th month (AWS).</span>
-                  <input type="number" id="bonusMonths" min="0" max="24" step="0.1" inputmode="decimal">
-                </label>
-                <label>Salary increase each year, %
-                  <span class="hint">0 keeps it the same every year.</span>
-                  <input type="number" id="salaryGrowth" min="-20" max="30" step="0.1" inputmode="decimal">
-                </label>
-              </div>
-              <label>Working until age
-                <span class="hint">Contributions stop after this age.</span>
-                <input type="number" id="workUntilAge">
-              </label>
-            </fieldset>
-          </div>
-          <div class="panel">
-            <fieldset>
-              <legend>Forecast</legend>
-              <label>Forecast to age <input type="number" id="targetAge" required></label>
-              <label class="check"><input type="checkbox" id="projectSums">
-                <span>Project future retirement sums and BHS
-                <span class="hint">CPF hasn't published them past <span data-cpf="latestSums"></span>. Ticked: they grow <span data-cpf="growthText"></span>, as estimates. Unticked: the latest published figures are reused, which makes the FRS and BHS look easier to reach than they will be.</span></span>
-              </label>
-              <div id="payoutGroup" class="group" hidden>
-                <label>Start CPF LIFE monthly payouts at age
-                  <select id="payoutAge"></select>
-                </label>
-                <label>CPF LIFE plan
-                  <select id="cpfLifePlan"></select>
-                </label>
-                <label>Sex
-                  <span class="hint">CPF publishes payout figures for men only. Women get less because they live longer on average, so for women the estimate is about <span data-cpf="femaleReduction"></span>% lower: an approximation, not a CPF figure.</span>
-                  <select id="sex">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                  </select>
-                </label>
-                <label>Starting monthly payout from CPF's Monthly Payout Estimator
-                  <span id="estimateHint" class="hint">Optional. If entered, replaces the app's estimate.</span>
-                  <input type="text" inputmode="decimal" class="money" id="cpfEstimate" placeholder="$0.00">
-                </label>
-              </div>
-            </fieldset>
-          </div>
-        </div>
-        <div class="form-col">
-          <div class="panel">
             <details id="housingSection">
               <summary>Housing paid from OA</summary>
               <div class="group">
@@ -137,6 +80,34 @@
               </div>
             </details>
           </div>
+        </div>
+        <div class="form-col">
+          <div class="panel">
+            <fieldset>
+              <legend>Work and income</legend>
+              <label>Contribution rates
+                <select id="memberType"></select>
+              </label>
+              <label><span id="salaryLabel">Monthly salary</span>
+                <span id="salaryHint" class="hint"></span>
+                <input type="text" inputmode="decimal" class="money" id="salary" placeholder="$0.00">
+              </label>
+              <div class="row2">
+                <label id="bonusField">Yearly bonus, in months of salary
+                  <span class="hint">Includes any 13th month (AWS).</span>
+                  <input type="number" id="bonusMonths" min="0" max="24" step="0.1" inputmode="decimal">
+                </label>
+                <label>Salary increase each year, %
+                  <span class="hint">0 keeps it the same every year.</span>
+                  <input type="number" id="salaryGrowth" min="-20" max="30" step="0.1" inputmode="decimal">
+                </label>
+              </div>
+              <label>Working until age
+                <span class="hint">Contributions stop after this age.</span>
+                <input type="number" id="workUntilAge">
+              </label>
+            </fieldset>
+          </div>
           <div class="panel">
             <details id="topUpSection">
               <summary>Top-ups and transfers</summary>
@@ -163,6 +134,37 @@
                 </label>
               </div>
             </details>
+          </div>
+        </div>
+        <div class="form-col">
+          <div class="panel">
+            <fieldset>
+              <legend>Forecast</legend>
+              <label>Forecast to age <input type="number" id="targetAge" required></label>
+              <label class="check"><input type="checkbox" id="projectSums">
+                <span>Project future retirement sums and BHS
+                <span class="hint">CPF hasn't published them past <span data-cpf="latestSums"></span>. Ticked: they grow <span data-cpf="growthText"></span>, as estimates. Unticked: the latest published figures are reused, which makes the FRS and BHS look easier to reach than they will be.</span></span>
+              </label>
+              <div id="payoutGroup" class="group" hidden>
+                <label>Start CPF LIFE monthly payouts at age
+                  <select id="payoutAge"></select>
+                </label>
+                <label>CPF LIFE plan
+                  <select id="cpfLifePlan"></select>
+                </label>
+                <label>Sex
+                  <span class="hint">CPF publishes payout figures for men only. Women get less because they live longer on average, so for women the estimate is about <span data-cpf="femaleReduction"></span>% lower: an approximation, not a CPF figure.</span>
+                  <select id="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                </label>
+                <label>Starting monthly payout from CPF's Monthly Payout Estimator
+                  <span id="estimateHint" class="hint">Optional. If entered, replaces the app's estimate.</span>
+                  <input type="text" inputmode="decimal" class="money" id="cpfEstimate" placeholder="$0.00">
+                </label>
+              </div>
+            </fieldset>
           </div>
           <div class="panel panel-cream">
             <fieldset>

@@ -160,3 +160,14 @@ th:nth-child(2), td:nth-child(2) { text-align: left; }
 @keyframes fade-in-up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 .fade-in { animation: fade-in-up .5s ease-out var(--fade-delay, 0ms) both; }
 @media print { .fade-in { animation: none; } }
+
+/* Form on wide screens: three columns of equal height, so the form is one even
+   rectangle. The main (first) panel in each column stretches so every column
+   ends on the same line (also when an optional section is opened), and
+   Calculate spans the full width. */
+@media (min-width: 1100px) {
+  .form-cols { grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: stretch; }
+  .form-col { display: flex; flex-direction: column; gap: 16px; }
+  .form-col > .panel:first-child { flex: 1; }
+  form > button[type="submit"] { justify-self: stretch; }
+}
