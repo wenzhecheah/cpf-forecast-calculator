@@ -88,6 +88,7 @@ read them from a copy of this repo cloned next to it).
 | `engine.js` | The forecast calculations |
 | `app.js` | The page: form, results, chart, sharing and export |
 | `to-top.js` | The back-to-top button (as in the BTO Planner) |
+| `fade-in.js` | The page's parts fade in one by one when it opens |
 | `index.html`, `style.css` | Page layout and styling |
 | `assets/` | The VWA logo for the browser tab and home-screen shortcuts (from vwagroup.sg) |
 | `tests/` | Checks of the calculations against CPF's published rates, rules and examples |
